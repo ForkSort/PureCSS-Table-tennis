@@ -14,6 +14,17 @@ body {
     overflow: hidden;
     transform: scale(3) translateY(35%);
 }
+/* fix for small resolution screens */
+@media screen and (max-width: 850px) {
+    body {
+        transform: scale(1) translateY(0);
+    }
+}
+@media screen and (max-width: 1250px) and (min-width: 851px) {
+    body {
+        transform: scale(2) translateY(20%);
+    }
+}
 h1 {
     font-size: 1rem;
     margin: 1em;
